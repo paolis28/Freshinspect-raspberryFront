@@ -1,15 +1,16 @@
-/*src/styles/Components.style/CanvasPieChart.css */
 
 .canvas-pie-chart-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80vh;
+  margin-left: 10%;
 }
 
 .canvas {
-  width: 60% !important;
+  width: 70% !important;
   height: auto !important;
+  margin-left: 20%;
 }
 
 
@@ -37,3 +38,36 @@
 .legend-label {
   font-size: 16px;
 }
+
+.datosProbCirculo{
+  display: flex;
+  margin-bottom: 7%;
+  /* justify-content: center; */
+  margin-top: 2%;
+  margin-left: -30%;
+
+  }
+
+  .labelProb{
+    margin-left: 6%;
+  }
+  .labelProb input{
+    width: 70%;
+    border-radius: 10px;
+    border-color: var(--main-color-amarillo);
+  }
+  .botonGrafica{
+    border-radius: 10px;
+   border-color: var(--main-color-amarillo) ;
+    width: 20%;
+    margin-top: 6%;
+    margin-left: 5%;
+  }
+  .tituloCirculo{
+ margin-left: 10%;
+ margin-top: 20%;
+  }
+  .titulo2Circulo{
+    margin-left: 10%;
+    margin-top: 20%;
+     }

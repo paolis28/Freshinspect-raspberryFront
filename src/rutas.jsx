@@ -7,6 +7,7 @@ import Monitoreo from "./Pages/Monitoreo.jsx";
 import Menu from './Pages/Menu.jsx';
 import Graficacircular from './Pages/Graficacirculo.jsx';
 import Tabla from "./Pages/Tabla.jsx";
+import Chequeo from "./Pages/Chequeo.jsx"
 
 const Rutas = () => {
   return (
@@ -18,6 +19,7 @@ const Rutas = () => {
       <Route path="/grafica" element={<Graficacircular />} />
       <Route path="/monitoreo" element={<Monitoreo />} />
       <Route path="/tabla" element={<Tabla />} />
+      <Route path="/chequeo" element={<Chequeo />} />
     </Routes>
   );
 };

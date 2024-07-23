@@ -62,9 +62,51 @@ const Graficacircular = () => {
 
   return (
     <><Navbar/>
+    <div style={{display:'flex', width:'100%'}}>
+     <div style={{width:'50%',margin:'2%'}}>
+        <div className='tituloCirculo'><h2>Función multinomial:</h2></div>
+        <div className="datosProbCirculo" style={{display:'flex'}}>
+          <div className='labelProb'>
+          <h3>Verdes:</h3>
+          <input type="text" />
+         
+          </div>
+          <div className='labelProb'>
+          <h3>Maduros:</h3>
+          <input type="text" />
+         
+          </div>
+          <div className='labelProb'>
+          <h3>Pasados:</h3>
+          <input type="text" />
+         
+          </div>
+        <button className='botonGrafica'> Calcular</button>
+        </div>
+
+        <div>
+        <div className='titulo2Circulo'><h2>Probabilidad:</h2></div>
+        <div className="datosProbCirculo" style={{display:'flex'}}>
+          <div className='labelProb'>
+          <h3>Verdes:</h3>
+          <label htmlFor="" className='probVerdes'>datos verdes</label>
+          </div>
+          <div className='labelProb'>
+          <h3>Maduros:</h3>
+          <label htmlFor="" className='probMaduros'>datos maduros</label>
+          </div>
+          <div className='labelProb'>
+          <h3>Pasados:</h3>
+          <label htmlFor="" className='probPasados'>datos pasados</label>
+          </div>
+        <button className='botonGrafica'> Calcular</button>
+        </div>
+        </div>
+        </div>
     <div className="canvas-pie-chart-wrapper">
       <canvas ref={canvasRef} width="300" height="300"></canvas>
       <Legend items={legendItems} />
+    </div>
     </div></>
   );
 };
