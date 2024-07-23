@@ -1,0 +1,45 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    background-color: var(--main-bg-fondo);
+    color: var(--main-color-negro);
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: var(--main-color-gris);
+  }
+  
+  .navbar-divider {
+    color: var(--main-color-gris);
+  }
+  
+  .navbar-settings {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .settings-icon, .profile-icon {
+    width: 24px;
+    height: 24px;
+  }

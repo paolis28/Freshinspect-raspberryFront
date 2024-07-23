@@ -1,0 +1,41 @@
+.monitoreo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color:#ECE8DE;
+  }
+  
+  .camara {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color-gris);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .camara img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .datos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  
+  .camposMonitoreo {
+    margin-bottom: 10px;
+  }
+  
+  .datosMonitoreo {
+    font-weight: bold;
+    color: #555;
+  }
+  
