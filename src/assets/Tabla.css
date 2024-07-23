@@ -1,64 +1,25 @@
+
 .tabla-container {
-  margin-top: 2%;
-  width: 108%;
-  padding: 2%;
+  margin-top: 5%;
+  width: 150%;
+  height: 130%;
+  padding: 5%;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.custom-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2% 0;
-  font-size: 1.2rem; 
-}
-
-.custom-table th,
-.custom-table td {
-  border: 1px solid #ddd;
-  padding: 1.5%;
-  text-align: left;
-}
-
-.custom-table th {
-  background-color: var(--main-color-amarillo);
-  color: white;
-  font-weight: bold;
-}
-
-.custom-table tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-.form-custom {
+  box-shadow: 0 4px 8px rgba(158, 156, 92, 0.882);
   display: flex;
-  align-items: center;
-  margin-bottom: 2%;
-  font-size: 1.2rem; 
+  flex-direction: column;
 }
 
-.form-custom label {
-  margin-right: 2%;
-  font-weight: bold;
-  color: #333;
+.monitoreoTablas{
+  margin-right: 20%;
+}
+.containerInputs{
+  gap: 10%;
 }
 
-.form-custom select,
-.form-custom button {
-  margin-right: 2%;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-size: 1.2rem; 
-}
-
-.form-custom button {
-  background-color: var(--main-color-amarillo);
-  color: white;
+.containerInputs input{
+border: none;
 }
 
 .pagination {

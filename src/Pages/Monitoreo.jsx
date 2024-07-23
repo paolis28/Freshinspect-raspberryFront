@@ -57,12 +57,10 @@ const Monitoreo = () => {
         <button onClick={handleStopCamera}>Detener</button>
         <video ref={videoRef} style={{ width: '100%', height: 'auto' }} autoPlay></video>
       </div>
-     <div style={{display:'flex'}}>
-      <div style={{marginRight:'5%', marginTop:'3%'}}><Tabla titulo="Verdes" data={verdesData} /></div>
-      <div style={{margin:'3%'}}><Tabla titulo="Maduros" data={madurosData} /></div>
-     </div>
-      
-      
+      <div className='monitoreoTablas' style={{display: 'flex'}}>
+        <div className='tablaVerde'  ><Tabla titulo="Verdes" data={verdesData} /></div>
+        <div className='tablaMaduro' ><Tabla titulo="Maduros" data={madurosData} /></div>
+      </div>
     </div>
   );
 };
