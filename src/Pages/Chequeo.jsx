@@ -11,7 +11,7 @@ const Chequeo = () => {
   });
 
   useEffect(() => {
-    const socket = io("https://socket-server.dreamapp.com.mx");
+    const socket = io("http://localhost:3001");
 
     socket.on("bananas", (data) => {
       alert("Racibido")
@@ -62,8 +62,7 @@ const Chequeo = () => {
         </section>
         </div>
         <div className="DatosInput">
-       
-         <input 
+        <input 
                 type="text" 
                 name="categoria" 
                 value={bananasData.date} 
@@ -78,13 +77,13 @@ const Chequeo = () => {
                 className="datosChequeo"
               />
         <input
-             type="text"
-
-
-
-
+                type="text"
+                name="peso" 
+                value={bananasData.color} 
+                onChange={handleChange} 
+                className="datosChequeo"
               />
-               <input 
+        <input 
                 type="text" 
                 name="peso" 
                 value={bananasData.classification} 

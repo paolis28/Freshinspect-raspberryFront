@@ -1,10 +1,10 @@
 import '../assets/Login.css';
 import { useState } from 'react';
-// import { useNavigate } from 'react-router';
-//import Platanos from '../assets/img/Rectangle.png'; 
+import axios from "axios";
+import { useNavigate } from 'react-router';
 
 const Login = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [body, setBody] = useState({phone_number:'', password: ''})
 
   const handleChange = ({target}) => {
@@ -15,10 +15,18 @@ const Login = () => {
     });
   }
 
-  const toAccess = async (event) => {
-    event.preventDefault(); // Evita que el formulario se envíe y la página se recargue
+  const toAccess = async(event) => {
+    event.preventDefault();
     try {
-      console.log(body);
+      const {phone_number, password} = body;
+      const url = `http://localhost:3000/users/${phone_number}/${password}`;
+      const response = await axios.get(url);
+      if (response.status == 200) {
+        alert("Datos correctos");
+        navigate("/menu");
+      }else if(response.status != 200){
+        alert("Número o contraseña incorrecta");
+      }
     } catch (error) {
       console.log(error);
     }

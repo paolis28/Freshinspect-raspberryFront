@@ -9,11 +9,6 @@ const Menu = () => {
             <h2>Chequeo</h2>
         </div>
         </Link>
-        <Link to="/grafica">
-        <div>
-            <h2>Gráfica</h2>
-        </div>
-        </Link>
         <Link to="/monitoreo"><div>
             <h2>Monitoreo</h2>
         </div>
